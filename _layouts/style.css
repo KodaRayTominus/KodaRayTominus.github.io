@@ -1,3 +1,7 @@
+{% include css/bootstrap.min.css %}
+{% include css/main.css %}
+{{ content }}
+
 /* --- 1. THE HERO BANNER --- */
 header.hero-banner {
     /* ENSURE YOU UPLOAD 'banner.jpg' TO YOUR IMG FOLDER */
