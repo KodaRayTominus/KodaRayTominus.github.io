@@ -22,13 +22,13 @@ google_verify:
 bing_verify:
 
 # Color settings (hex-codes without the leading hash-tag)
-# Odyssey Strategy: "Dark Navy & Cyber Orange" Theme
+# Odyssey Strategy: "Dark Blue & Dark Orange" Scheme
 color:
-  primary: 0f172a      # Deep Navy (Matches your business site background)
+  primary: 0f172a      # Deep Navy/Dark Blue (The background color of your business site)
   primary-rgb: "15, 23, 42"
-  secondary: f97316    # Vibrant Orange (Matches the "Cybersecurity" text & buttons)
-  secondary-dark: c2410c # Burnt Orange (Darker shade for hover states/accessibility)
-  section-tout: fff7ed # Very Light Warm Grey (Subtle orange tint to match the theme)
+  secondary: ea580c    # Dark/Vibrant Orange (The specific orange from your logo gradient)
+  secondary-dark: 9a3412 # Burnt Orange (Darker shade for hover states/accessibility)
+  section-tout: e0f2fe # Very Light Blue (A subtle cool tone to represent the "Blue" side of the fade for the content area)
 
 # Build settings
 markdown: kramdown
