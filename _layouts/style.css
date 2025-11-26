@@ -1,24 +1,24 @@
-{% include css/bootstrap.min.css %}
-{% include css/main.css %}
-{{ content }}
 /* --- 1. THE HERO BANNER --- */
 header.hero-banner {
-    /* Replace with your actual banner image path */
-    background: url('../img/your-banner-image.jpg') no-repeat center center scroll; 
+    /* ENSURE YOU UPLOAD 'banner.jpg' TO YOUR IMG FOLDER */
+    background: url('img/banner.jpg') no-repeat center center scroll; 
     background-size: cover;
     position: relative;
-    /* Remove the old solid background color here if it exists in previous CSS */
+    color: white; /* Ensures text on top is white */
+    padding-top: 150px; /* Give it breathing room */
+    padding-bottom: 100px;
 }
 
 /* The Scrim (Dark Overlay) */
-/* This ensures white text is readable over any image */
 header.hero-banner .overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 50% Black tint */
+    /* This creates the dark tint so text pops. 
+       0.7 = 70% opacity (Darker is better for readability) */
+    background-color: rgba(15, 23, 42, 0.8); 
     z-index: 1;
 }
 
@@ -28,35 +28,33 @@ header.hero-banner .container {
     z-index: 2;
 }
 
-
 /* --- 2. THE SLIMMER NAVBAR --- */
-/* Overriding Bootstrap's default padding */
 .navbar-fixed-top {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    min-height: 50px; /* Force it to be shorter */
+    min-height: 50px;
 }
 
 .navbar-brand {
-    font-size: 1.5em; /* Slightly smaller brand text */
+    font-size: 1.5em; 
 }
 
-/* Adjust link padding to fit the new height */
 .navbar-nav > li > a {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
 }
 
-
-/* --- 3. SHIFTING THE COLOR DOWN --- */
-/* Assuming the next section is #about (About Me) */
-/* We move the 'primary' brand color here */
+/* --- 3. SHIFTING THE COLOR DOWN (About Section) --- */
 #about {
-    background-color: #18BC9C; /* The standard Teal - replace with your preferred color */
-    color: white; /* Make text white to match the old header style */
+    /* This uses the Deep Navy from your theme to create contrast */
+    background-color: #0f172a; 
+    color: white; 
 }
 
-/* If you have headers inside About Me, make them white too */
 #about h2, #about h3 {
-    color: white;
+    color: white; 
+}
+
+#about hr.star-light {
+    border-color: white;
 }
