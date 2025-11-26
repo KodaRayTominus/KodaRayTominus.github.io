@@ -1,3 +1,62 @@
 {% include css/bootstrap.min.css %}
 {% include css/main.css %}
 {{ content }}
+/* --- 1. THE HERO BANNER --- */
+header.hero-banner {
+    /* Replace with your actual banner image path */
+    background: url('../img/your-banner-image.jpg') no-repeat center center scroll; 
+    background-size: cover;
+    position: relative;
+    /* Remove the old solid background color here if it exists in previous CSS */
+}
+
+/* The Scrim (Dark Overlay) */
+/* This ensures white text is readable over any image */
+header.hero-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% Black tint */
+    z-index: 1;
+}
+
+/* Ensure content sits ON TOP of the overlay */
+header.hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* --- 2. THE SLIMMER NAVBAR --- */
+/* Overriding Bootstrap's default padding */
+.navbar-fixed-top {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    min-height: 50px; /* Force it to be shorter */
+}
+
+.navbar-brand {
+    font-size: 1.5em; /* Slightly smaller brand text */
+}
+
+/* Adjust link padding to fit the new height */
+.navbar-nav > li > a {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+
+/* --- 3. SHIFTING THE COLOR DOWN --- */
+/* Assuming the next section is #about (About Me) */
+/* We move the 'primary' brand color here */
+#about {
+    background-color: #18BC9C; /* The standard Teal - replace with your preferred color */
+    color: white; /* Make text white to match the old header style */
+}
+
+/* If you have headers inside About Me, make them white too */
+#about h2, #about h3 {
+    color: white;
+}
