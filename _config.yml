@@ -3,7 +3,7 @@ name: Dakota Ray Tominus
 email: Koda.Tominus@gmail.com
 #canonical_url: https://tominustechlabs.com
 
-# Odyssey Strategy: Targeting "Senior" & "Security" search terms
+# Keywords for ATS
 keywords: "Software Engineer, Cybersecurity, Network Administrator, MSP, C#, Unity, .NET, Azure, CySA+, ITIL, System Administration, Full Stack Developer"
 skills: "Software Engineer & Cybersecurity Specialist | Tacoma, WA"
 baseurl:
@@ -22,14 +22,13 @@ google_verify:
 bing_verify:
 
 # Color settings (hex-codes without the leading hash-tag)
-# Odyssey Strategy: EXACT MATCH from Tominus Tech Labs Image
+# Odyssey Strategy: "Dark Navy & Cyber Orange" Theme
 color:
-  primary: 0f172a      # The Deep "Cyber Navy" background from your site (Professional Base)
+  primary: 0f172a      # Deep Navy (Matches your business site background)
   primary-rgb: "15, 23, 42"
-  secondary: 38bdf8    # The "Electric Blue" from your "Your Strategic" text (High Contrast Accent)
-  secondary-dark: 0284c7 # A slightly darker blue for hover states (Accessibility)
-  section-tout: f0f9ff # "Alice Blue" - A very light tint of your brand blue. 
-                       # (I kept this light to ensure your text remains readable in the "Interests" section)
+  secondary: f97316    # Vibrant Orange (Matches the "Cybersecurity" text & buttons)
+  secondary-dark: c2410c # Burnt Orange (Darker shade for hover states/accessibility)
+  section-tout: fff7ed # Very Light Warm Grey (Subtle orange tint to match the theme)
 
 # Build settings
 markdown: kramdown
